@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Store from "@material-ui/icons/Store";
-import Warning from "@material-ui/icons/Warning";
+// import Warning from "@material-ui/icons/Warning";
 import DateRange from "@material-ui/icons/DateRange";
 import LocalOffer from "@material-ui/icons/LocalOffer";
 import Update from "@material-ui/icons/Update";
@@ -22,7 +22,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import Table from "components/Table/Table.js";
 import Tasks from "components/Tasks/Tasks.js";
 import CustomTabs from "components/CustomTabs/CustomTabs.js";
-import Danger from "components/Typography/Danger.js";
+// import Danger from "components/Typography/Danger.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardIcon from "components/Card/CardIcon.js";
@@ -33,11 +33,12 @@ import { bugs, website, server } from "variables/general.js";
 
 import {
   dailySalesChart,
-  emailsSubscriptionChart,
+  ItemMostOrderedChart,
   completedTasksChart,
 } from "variables/charts.js";
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
+// import {  } from "variables/charts";
 
 const useStyles = makeStyles(styles);
 
@@ -48,16 +49,16 @@ export default function Dashboard() {
       <GridContainer>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
-            <CardHeader color="warning" stats icon>
-              <CardIcon color="warning">
-                <Icon>content_copy</Icon>
-              </CardIcon>
-              <p className={classes.cardCategory}>Used Space</p>
-              <h3 className={classes.cardTitle}>
+            {/* <CardHeader color="warning" stats icon> */}
+            {/* <CardIcon color="warning"> */}
+            {/* <Icon>content_copy</Icon> */}
+            {/* </CardIcon> */}
+            {/* <p className={classes.cardCategory}>Used Space</p> */}
+            {/* <h3 className={classes.cardTitle}>
                 49/50 <small>GB</small>
-              </h3>
-            </CardHeader>
-            <CardFooter stats>
+              </h3> */}
+            {/* </CardHeader> */}
+            {/* <CardFooter stats>
               <div className={classes.stats}>
                 <Danger>
                   <Warning />
@@ -66,7 +67,7 @@ export default function Dashboard() {
                   Get more space
                 </a>
               </div>
-            </CardFooter>
+            </CardFooter> */}
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
@@ -154,16 +155,18 @@ export default function Dashboard() {
             <CardHeader color="warning">
               <ChartistGraph
                 className="ct-chart"
-                data={emailsSubscriptionChart.data}
+                data={ItemMostOrderedChart.data}
                 type="Bar"
-                options={emailsSubscriptionChart.options}
-                responsiveOptions={emailsSubscriptionChart.responsiveOptions}
-                listener={emailsSubscriptionChart.animation}
+                options={ItemMostOrderedChart.options}
+                responsiveOptions={ItemMostOrderedChart.responsiveOptions}
+                listener={ItemMostOrderedChart.animation}
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Email Subscriptions</h4>
-              <p className={classes.cardCategory}>Last Campaign Performance</p>
+              <h4 className={classes.cardTitle}>Item Most ordered</h4>
+              <p className={classes.cardCategory}>
+                Performance of the different items in the catalougue
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>

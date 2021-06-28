@@ -66,10 +66,10 @@ const dailySalesChart = {
 };
 
 // ##############################
-// // // Email Subscriptions
+// // // Items most ordered
 // #############################
 
-const emailsSubscriptionChart = {
+const ItemMostOrderedChart = {
   data: {
     labels: [
       "Jan",
@@ -185,6 +185,6 @@ const completedTasksChart = {
 
 module.exports = {
   dailySalesChart,
-  emailsSubscriptionChart,
+  ItemMostOrderedChart,
   completedTasksChart,
 };

@@ -27,8 +27,8 @@ import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
-import Employees from "views/TableList/TableList.js";
-import Orders from "views/Typography/Typography.js";
+import Employees from "views/Employees/Employees.js";
+import Orders from "views/Orders/Orders.js";
 import Icons from "views/Icons/Icons.js";
 // import Maps from "views/Maps/Maps.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
@@ -62,7 +62,7 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/orders",
     name: "Orders",
     rtlName: "Orders",
     icon: LibraryBooks,
