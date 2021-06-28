@@ -52,7 +52,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function TypographyPage() {
+export default function Orders() {
   const classes = useStyles();
   return (
     <Card>

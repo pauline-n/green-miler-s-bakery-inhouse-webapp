@@ -66,7 +66,7 @@ const dashboardRoutes = [
     name: "Orders",
     rtlName: "Orders",
     icon: LibraryBooks,
-    component: Typography,
+    component: Orders,
     layout: "/admin",
   },
   {
